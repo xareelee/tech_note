@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Xaree's Development Notes</title>
+ <link href="http://xareelee.github.io/development_notes//atom.xml" rel="self"/>
+ <id>http://xareelee.github.io/development_notes/</id>
+ <updated>2015-07-23T15:44:37+08:00</updated>
+ <author>
+   <name>Xaree Lee</name>
+   <uri>http://xareelee.github.io/</uri>
+   <email>xareelee@gmail.com</email>
+ </author>
+
+ 
+
+ <entry>
+   <title>使用 GitHub Pages 和 Jekyll 來建立 Blog</title>
+   <link href="http://xareelee.github.io/development_notes//%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog"/>
+   <id>http://xareelee.github.io/development_notes//使用-GitHub-Pages-和-Jekyll-來建立-Blog</id>
+   <updated>2015-07-23T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;因為一直習慣使用 &lt;a href=&quot;http://markdown.tw&quot;&gt;markdown&lt;/a&gt; 來寫筆記，寫久了之後發現資料還是需要放在雲端上，已防止哪天電腦上的資料遺失了，至少還有個異地備份。而後來希望這些 markdown 文件若能輕鬆成為 blog 文章，所以才會有這個 blog，和這篇文章。&lt;/p&gt; &lt;p&gt;我曾經有自己申請一個 domain 以及主機，來自己 host 一個 blog (試過 &lt;a href=&quot;https://wordpress.org&quot;&gt;wordpress&lt;/a&gt; 和 &lt;a href=&quot;http://octopress.org&quot;&gt;octopress&lt;/a&gt;)，不過後來懶得經營，加上主機一年後到期。這次我則決定使用 &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 來建立的，並使用 &lt;a href=&quot;https://github.com/KingFelix/emerald&quot;&gt;Emerald&lt;/a&gt; 主題來改的。因為它滿足了我的需求：&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;strong&gt;要可以使用 &lt;a href=&quot;http://markdown.tw&quot;&gt;markdown&lt;/a&gt; 來撰寫 blog：&lt;/strong&gt; &lt;ul&gt; &lt;li&gt;Markdown 可以用簡單的文字，表達出文章的架構。&lt;/li&gt; &lt;li&gt;撰寫 Markdown 文件已經算是 21 世紀的基本能力。&lt;/li&gt; &lt;li&gt;可以套用不同 theme (.css) 讓文章排版變得好看。&lt;/li&gt; &lt;li&gt;需要一個能夠把現有的...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Typograhy example</title>
+   <link href="http://xareelee.github.io/development_notes//typography"/>
+   <id>http://xareelee.github.io/development_notes//typography</id>
+   <updated>2015-03-19T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/emerald/img/img-test.png&quot; alt=&quot;Test&quot; title=&quot;Test&quot; /&gt; Lorem ipsum dolor sit amet, &lt;a href=&quot;http://www.example.com&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Code Syntax</title>
+   <link href="http://xareelee.github.io/development_notes//code-syntax"/>
+   <id>http://xareelee.github.io/development_notes//code-syntax</id>
+   <updated>2015-03-01T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;To insert highlight code inside of a post, it’s enough to use some specific tags, has directly described into the &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;Jekyll documentation&lt;/a&gt;. In this way the code will be included into a &lt;code&gt;.highlight&lt;/code&gt; CSS class and will be highlight according to the &lt;a href=&quot;https://github.com/mojombo/tpw/blob/master/css/syntax.css&quot;&gt;syntax.scss&lt;/a&gt; file. This is the standard...</content>
+ </entry>
+
+ 
+
+</feed>
