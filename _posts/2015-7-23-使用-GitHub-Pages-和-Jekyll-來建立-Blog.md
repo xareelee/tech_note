@@ -5,19 +5,25 @@ category : Blog
 tags : [GitHub Pages, Jekyll]
 ---
 
-
 因為一直習慣使用 [markdown] 來寫筆記，寫久了之後發現資料還是需要放在雲端上，已防止哪天電腦上的資料遺失了，至少還有個異地備份。而後來希望能將一些 markdown 的筆記轉為自己 blog 文章，所以才會有這個 blog 和這篇文章。
 
 我曾經有自己申請一個 domain 以及主機，來自己 host 一個 blog (試過 [wordpress] 和 [octopress])，不過後來懶得經營，加上主機一年後到期。這次我則決定使用 [GitHub Pages] 和 [Jekyll] 來建立 blog。
 
-* 為何我選擇 GitHub Pages + Jekyll
-* 不必寫程式碼，也可以架好免費的 blog
-* 正統的建立方式
-* 熟悉 markdown、HTML、git、GitHub、Jekyll
-* 開始寫 Blog
+基本上，GitHub Pages ＋ Jekyll 的架設門檻不算高，發佈和維護容易，即使不會寫程式，也是可以上手。
 
+----
 
-## 為何我選擇 GitHub Pages + Jekyll
+* [為何我選擇 GitHub Pages + Jekyll](#why_github_pages_and_jekyll)
+* [需要了解多少的 markdown、HTML、git、GitHub、Jekyll](#prerequisites)
+* [不必寫程式碼，也可以架好免費的 blog (懶人法)](#build_blog_without_geek_skills)
+* [正統的建立方式](#build_blog_with_geek_skills)
+* [開始寫 Blog](#start_writing_blog)
+
+----
+
+<a name="why_github_pages_and_jekyll"/>
+
+## [為何我選擇 GitHub Pages + Jekyll](#why_github_pages_and_jekyll)
 
 簡單的說，因為它滿足了我懶惰的需求：
 
@@ -25,7 +31,7 @@ tags : [GitHub Pages, Jekyll]
     * Markdown 可以用簡單的文字，表達出文章的架構。
     * 讓文章內容、結構與文章呈現的相依性分離，可以專注在寫作上。
     * 可以套用不同 theme (.css) 讓文章排版變得好看。
-    * 撰寫 Markdown 文件已經算是 21 世紀的基本能力。
+    * 撰寫 Markdown 文件已經算是 21 世紀文字工作者的基本能力。
 2. **要可以使用 [git] 做管理和發佈：**
     * 分散式管理讓我可以在電腦上完成文章之後，再同步到 host 主機上。
     * 可以使用 git 做文章的 branch，需要發佈時，再 merge 回發佈的支線上。
@@ -43,8 +49,55 @@ tags : [GitHub Pages, Jekyll]
     * 社團活躍度高，文件充足，有問題都 google 的到，或是有人可以回答。
     * 選用 [Jekyll] 的原因是 GitHub Pages 推薦使用的 blogger 平台。
 
+總結一下 GitHub Pages ＋ Jekyll 的特點：
 
-## 不必寫程式碼，也可以架好免費的 blog
+* 支援 markdown
+* 免費方案
+* 架設門檻不高
+* 彈性極高
+* 使用 git，可以做版本控制
+* 可在離線狀態下撰寫，並在本機上先產出 HTML 瀏覽結果
+* 限制是沒有資料庫，只支援靜態網頁。對於一般的 blog 已經相當足夠。
+
+
+<a name="prerequisites"/>
+
+## [需要了解多少的 markdown、HTML、git、GitHub、Jekyll](#prerequisites)
+
+整個 blog 需要接觸到 markdown、HTML、git、GitHub、Jekyll。如果有不熟的也沒關係，很多東西都只需要入門的能力，甚至可以跳過。
+
+### Markdown 技能：
+* 初期學習門檻低、中期學習曲線平、後期精通容易。人人都可以上手。
+* 越熟練越好，這是文字工作者必備的技能。
+* 建議搭配[所見即所得](https://zh.wikipedia.org/zh-tw/所見即所得)的編輯軟體，在 Mac 上我使用 [MacDown] 這個由台灣開發者 **@uranusjr** 所開發的優秀軟體。
+
+### HTML/CSS/Javascript 技能：
+* 初期學習門檻低、中期學習曲線略陡、後期精通需要花一些時間。
+* 基本的難度不高，學多少就可以用多少，所以可以從入門開始就能夠改得動一些東西。
+* 雖然不是一定要懂，但能懂一點點比較好，這樣客製化比較容易。
+* 基本上專案內的檔案，大多為 HTML、CSS (SCSS)、js。
+* 在 Mac 上的編輯器，我推薦使用 [Sublime Text](https://www.sublimetext.com) (Sublime Text 2 是免費的) 或是 [Atom](https://atom.io)。
+
+### git 技能：
+* 能有一些 git 的版本控制概念比較好，基本門檻就是學會提交備份 (add/commit)。
+* 能的話，再多了解遠端同步 (push/pull)、分支概念 (branch)。
+* 初期學習門檻高、中期學習曲線還算平、後期精通需要花一些時間。
+* 許多圖型介面軟體可以避免 command line。在 Mac 上我推薦使用 [SourceTree]。
+
+### GitHub：
+* GitHub 是一個 web service，只要學會它的網頁操作即可。
+* 基本上簡單易用，學習成本很低。
+
+### Jekyll：
+* 基本上不必直接接觸 Jekyll 的程式碼，只要直接使用就好，官方文件算是充足。
+* Jekyll 是用 [Ruby] 撰寫，若是懂一點 Ruby 會有幫助。
+* 如果你已經有程式開發的概念，那麼在 HTML 內使用程式碼插入內容，是件簡單的事。
+
+
+
+<a name="build_blog_without_geek_skills"/>
+
+## [不必寫程式碼，也可以架好免費的 blog (懶人法)](#build_blog_without_geek_skills)
 
 如果你沒寫過程式、或是新手，完全不想碰程式碼、不在電腦上安裝東西、不想碰 git 版本控制、不想接觸 command line 指令，只想單純靠瀏覽器，就架好 GitHub Pages + Jykyll 的 blog，事實上也是有辦法的 (不過你還是得學 [markdown] 來寫文章)。
 
@@ -121,8 +174,9 @@ ads: true
 // 以下開始撰寫你的文章
 </pre>
 
+<a name="build_blog_with_geek_skills"/>
 
-## 正統的建立方式
+## [正統的建立方式](#build_blog_with_geek_skills)
 
 在 [GitHub Pages](https://pages.github.com) 上，有步驟教學。如果資訊不足的話，google `GitHub Pages + Jekyll` 也有很多建立 blog 的教學文。所以這裡就不再說明。
 
@@ -133,43 +187,15 @@ ads: true
 * 可以在送到 GitHub 之前，在本機端先跑 Jekyll 看結果，邊看邊修。完成後再 push 到 GitHub 上。
 
 
+<a name="start_writing_blog"/>
 
-## 所需 markdown、HTML、git、GitHub、Jekyll 的能力
-
-整個 blog 需要接觸到 markdown、HTML、git、GitHub、Jekyll。如果有不熟的也沒關係，很多東西都只需要入門的能力，甚至可以跳過。
-
-### Markdown 技能：
-* 初期學習門檻低、中期學習曲線平、後期精通容易。人人都可以上手。
-* 越熟練越好，這是文字工作者必備的技能。
-* 建議搭配[所見即所得](https://zh.wikipedia.org/zh-tw/所見即所得)的編輯軟體，在 Mac 上我使用 [MacDown] 這個由台灣開發者的優秀軟體。
-
-### HTML/CSS/Javascript 技能：
-* 初期學習門檻低、中期學習曲線略陡、後期精通需要花一些時間。
-* 基本的難度不高，學多少就可以用多少，所以可以從入門開始就能夠改得動一些東西。
-* 雖然不是一定要懂，但能懂一點點比較好，這樣客製化比較容易。
-* 基本上專案內的檔案，大多為 HTML、CSS (SCSS)、js。
-* 在 Mac 上的編輯器，我推薦使用 [Sublime Text](https://www.sublimetext.com) (Sublime Text 2 是免費的) 或是 [Atom](https://atom.io)。
-
-### git 技能：
-* 簡單的說，就是指令列的 [TimeMachine](https://support.apple.com/zh-tw/HT201250)。但 git 功能遠超過單純的歷史備份。
-* 初期學習門檻高、中期學習曲線還算平、後期精通需要花一些時間。
-* 通常只要學會提交備份 (add/commit)、遠端同步 (push/pull)、分支概念 (branch) 就夠了。
-* 許多圖型介面軟體可以避免 command line。在 Mac 上我推薦使用 [SourceTree]。
-
-### GitHub：
-* GitHub 是一個 web service，只要學會它的網頁操作即可。
-* 基本上簡單易用，學習成本很低。
-
-### Jekyll：
-* 基本上不必直接接觸 Jekyll 的程式碼，只要直接使用就好，官方文件算是充足。
-* 如果你已經有程式開發的概念，那麼在 HTML 內使用程式碼插入內容，是件簡單的事。
-
-
-# 架好了，就開始寫 Blog 吧！
+# [架好了，就開始寫 Blog 吧！](#start_writing_blog)
 
 
 
 
+
+<!-- References -->
 [markdown]: http://markdown.tw
 [GitHub Pages]: https://pages.github.com
 [GitHub]: https://github.com
@@ -180,3 +206,4 @@ ads: true
 [octopress]: http://octopress.org
 [MacDown]: http://macdown.uranusjr.com
 [SourceTree]: https://www.sourcetreeapp.com
+[Ruby]: https://www.ruby-lang.org
