@@ -1,23 +1,22 @@
 ---
-title: 使用 GitHub Pages 和 Jekyll 來建立 Blog
-layout: post
-category : Blog
-tags : [GitHub Pages, Jekyll]
+layout      : post
+title       : 使用 GitHub Pages 和 Jekyll 來建立 Blog
+subtitle    : 新手建立免費、高彈性 Blog 的方法
+tags        : [GitHub Pages, Jekyll]
 ---
 
 因為一直習慣使用 [markdown] 來寫筆記，寫久了之後發現資料還是需要放在雲端上，已防止哪天電腦上的資料遺失了，至少還有個異地備份。而後來希望能將一些 markdown 的筆記轉為自己 blog 文章，所以才會有這個 blog 和這篇文章。
 
 我曾經有自己申請一個 domain 以及主機，來自己 host 一個 blog (試過 [wordpress] 和 [octopress])，不過後來懶得經營，加上主機一年後到期。這次我則決定使用 [GitHub Pages] 和 [Jekyll] 來建立 blog。
 
-基本上，GitHub Pages ＋ Jekyll 的架設門檻不算高，發佈和維護容易，即使不會寫程式，也是可以上手。
+基本上，GitHub Pages ＋ Jekyll 對於一個會寫代碼的人來說，架設門檻不算高，發佈和維護也容易。即使不會寫程式，只要有基本的 HTML 和 markdown 的知識，也是可以上手；但最好要多了解 git。
 
 ----
 
 * [為何我選擇 GitHub Pages + Jekyll](#why_github_pages_and_jekyll)
-* [需要了解多少的 markdown、HTML、git、GitHub、Jekyll](#prerequisites)
+* [需要了解多少的 markdown、HTML、git、GitHub、Jekyll 才能夠使用？](#prerequisites)
 * [不必寫程式碼，也可以架好免費的 blog (懶人法)](#build_blog_without_geek_skills)
 * [正統的建立方式](#build_blog_with_geek_skills)
-* [開始寫 Blog](#start_writing_blog)
 
 ----
 
@@ -37,7 +36,7 @@ tags : [GitHub Pages, Jekyll]
     * 可以使用 git 做文章的 branch，需要發佈時，再 merge 回發佈的支線上。
     * 可以使用 git 查看文章的歷史修改記錄。即使刪除了文章，還是能夠找回。
     * 萬一哪天 host 服務終止了，電腦上依舊保有這些文章以及 blog 系統，可以快速佈署到新的主機上。
-3. **能夠 host 在 [GitHub] 上 ([GitHub Pages]))：**
+3. **能夠 host 在 [GitHub] 的 [GitHub Pages] 上：**
     * 一個免費 git hosting。
     * 有好用的 web 介面可以操作和設定。
     * 支援 blogger 系統，不需要自己管理主機、申請 URL domain。
@@ -62,7 +61,7 @@ tags : [GitHub Pages, Jekyll]
 
 <a name="prerequisites"/>
 
-## [需要了解多少的 markdown、HTML、git、GitHub、Jekyll](#prerequisites)
+## [需要了解多少的 markdown、HTML、git、GitHub、Jekyll 才能夠使用？](#prerequisites)
 
 整個 blog 需要接觸到 markdown、HTML、git、GitHub、Jekyll。如果有不熟的也沒關係，很多東西都只需要入門的能力，甚至可以跳過。
 
@@ -154,31 +153,32 @@ GitHub Pages 除了支援 project pages 外，還有支援 [user/organization pa
 
 ### (5) 開始撰寫你的 Blog
 
-新的文章只要放在 `_posts` 資料夾下，GitHub 就會自動開始幫你更新網頁內容。不過要注意以下幾點：
+你可以使用 GitHub 本身提供的 markdown online editor 直接透過瀏覽器新增、編輯文章。新的文章只要放在 `_posts` 資料夾下，GitHub 就會自動開始幫你更新網頁內容。不過要注意以下幾點：
 
 * markdown 的檔案命名必須為 `YYYY-MM-DD-{article_title}.md`。
-* 通常支援並非是純 markdown，而是採用 kramdown，因此部分正統 markdown 的標記方式可能不適用。
+* markdown 有多種擴充格式或是變形，GitHub 內定支援的分析器是 `kramdown`，因此部分 markdown 的標記方式可能不適用。另外還有 `kdiscount` 和 `redcarpet`，可以透過 `_config.yml` 設定。
 * markdown 內容的開頭應該類似下方，標示一些文章屬性 (大多數為非必要)：
 
-<pre lang="markdown">
+```html
 ---
-layout: article
-title: "Sample Post Style Guide"
-categories: articles
-modified: 2014-08-27T11:57:41-04:00
-tags: [sample]
-comments: true
-ads: true
+layout      : article   <!--必要，決定使用 article.html 來排版繪製-->
+title       : "Sample Post Style Guide" <!--必要，顯示的標題-->
+date        : 2016-02-06 19:32:10 +0800 <!--時間、時區會影響發表時間-->
+categories  : articles  <!--會影響 URL 路徑，以及之後的篩選-->
+tags        : [sample]
 ---
 
 // 以下開始撰寫你的文章
-</pre>
+```
 
 <a name="build_blog_with_geek_skills"/>
 
 ## [正統的建立方式](#build_blog_with_geek_skills)
 
-在 [GitHub Pages](https://pages.github.com) 上，有步驟教學。如果資訊不足的話，google `GitHub Pages + Jekyll` 也有很多建立 blog 的教學文。所以這裡就不再說明。
+
+GitHub 有提供[客製化 GitHub Pages 的教學 (使用 Jekyll)](https://help.github.com/categories/customizing-github-pages/)
+
+若是想要從頭開始建立 GitHub Pages，GitHub 也有提供[簡單的教學](https://pages.github.com)。
 
 用正統方法建立起的 GitHub Pages + Jekyll 的差別在於：
 
@@ -187,9 +187,8 @@ ads: true
 * 可以在送到 GitHub 之前，在本機端先跑 Jekyll 看結果，邊看邊修。完成後再 push 到 GitHub 上。
 
 
-<a name="start_writing_blog"/>
 
-# [架好了，就開始寫 Blog 吧！](#start_writing_blog)
+# 架好了，就開始寫 Blog 吧！
 
 
 

@@ -1,34 +1,25 @@
-# Site settings
-title: Xaree's Development Notes
-description: "A blog for development notes"
-url: "http://xareelee.github.io/development_notes/"
+# Site
+url                 : http://xareelee.github.io/tech_note/
+baseurl             : /tech_note
+
+# Dependencies
+kramdown:
+  input             : GFM
+  syntax_highlighter: rouge
+
+# Paginate
+gems                : ["jekyll-paginate"]
+paginate            : 5
+
+# Setup
+title               : Xaree
+tagline             : Tech Notes
+description         : 岡。開發
 author:
-  name: "Xaree Lee"
-  email: "xareelee@gmail.com"
-  url: "http://xareelee.github.io/"
-
-# Build settings
-baseurl: /development_notes/ # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
-
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Custom variables
-version: "1.1.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+  name              : "Xaree Lee"
+  email             : "xareelee@gmail.com"
+  url               : "http://xareelee.github.io/"
+  facebook_username : leondemon
+  twitter_username  : xareelee
+  github_username   : xareelee
+  

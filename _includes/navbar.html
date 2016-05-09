@@ -1,0 +1,45 @@
+<div class="navbar">
+  <h1>
+    <a class="home-logo" href="{{ site.baseurl }}/">
+      {{ site.title }}
+    </a>
+  </h1>
+
+  <nav>
+    <span class="sidebar-nav-item">
+      <ul class="list-inline text-center">
+      {% if site.author.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.author.twitter_username }}">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.facebook_username %}
+      <li>
+        <a href="https://www.facebook.com/{{ site.author.facebook_username }}">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.author.github_username }}">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      {% endif %}
+      </ul>
+    </span>
+  </nav>
+  
+</div>
