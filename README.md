@@ -19,3 +19,23 @@ subtitle    : 快速建立 Blog 的方法 <!--不一定要有，顯示在主頁�
 tags        : [GitHub Pages, Jekyll]
 ---
 ```
+
+## 在本地預覽
+
+先安裝 [Jykell](https://jekyllrb.com/docs/installation/):
+
+```shell
+$ gem install jekyll
+```
+
+在 git repo 下執行 jekyll:
+
+```shell
+$ jekyll serve --watch
+// 若要看未來發表的文章，加上 --future
+$ jekyll serve --watch --future
+```
+
+運行後會顯示 `Server address: ...` 這行就是本地端可以預覽的 URL，使用瀏覽器打開即可。
+
+注意：若是變更主項目的 URL，則需要重新執行 `jekyll serve --watch`
