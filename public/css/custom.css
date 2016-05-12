@@ -247,7 +247,7 @@
 }
 .theme-base-chocolate ::selection {
     color: white;
-    background-color: #bf4d28;
+    background-color: #ff0080;
 }
 .theme-base-chocolate a.tag-wrapper {
     margin-left: 3px;
