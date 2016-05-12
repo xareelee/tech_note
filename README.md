@@ -2,7 +2,7 @@
 
 本庫用來發表部落格，請參考這個[連結 (http://xareelee.github.io/tech_note)](http://xareelee.github.io/tech_note)。
 
-該頁面使用 [Jekyll](http://jekyllrb.com) 驅動，並使用 [Hyde](https://github.com/poole/hyde) 主題。
+該頁面使用 [Jekyll](http://jekyllrb.com) 驅動，並使用 [Hyde](https://github.com/poole/hyde) 主題，參考 [Rhadow's Tech Note](http://rhadow.github.io/2015/02/18/Jekyll-x-Github-x-Blog-Part1/) 進行修改。
 
 ## 發佈新文章
 
