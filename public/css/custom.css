@@ -15,7 +15,7 @@
     font-weight: bold;
 }
 .theme-base-chocolate .sidebar a:hover {
-    color: #bf4d28;
+    color: #0080FF;
 }
 .theme-base-chocolate .sidebar-nav a.active {
     text-decoration: none;
@@ -108,7 +108,7 @@
     font-size: .75rem;
 }
 .theme-base-chocolate .post-info a:hover {
-    color: #bf4d28;
+    color: #0080FF;
     text-decoration: none;
 }
 .theme-base-chocolate .post-date {
@@ -130,12 +130,12 @@
 }
 .theme-base-chocolate .post .post-title a:hover {
     text-decoration: none;
-    color: #bf4d28;
+    color: #0080FF;
 }
 .theme-base-chocolate a.pagination-item:hover {
-    background-color: #bf4d28;
+    background-color: #0080FF;
     color: #fff;
-    border-color: #bf4d28;
+    border-color: #0080FF;
     text-decoration: none;
 }
 .theme-base-chocolate .pagination-item {
@@ -170,13 +170,13 @@
     border-bottom: 1px solid #bbb;
 }
 .theme-base-chocolate .tag-summary-title {
-    color: #bf4d28;
+    color: #0080FF;
 }
 .theme-base-chocolate .tag-summary a {
     color: #2a363b;
 }
 .theme-base-chocolate .tag-summary a:hover {
-    color: #bf4d28;
+    color: #0080FF;
     text-decoration: none;
 }
 .theme-base-chocolate .tag-summary h3 {
@@ -223,7 +223,7 @@
     color: #2a363b;
 }
 .theme-base-chocolate .archive a:hover {
-    color: #bf4d28;
+    color: #0080FF;
     text-decoration: none;
 }
 .theme-base-chocolate .tag-cloud {
